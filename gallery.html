@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/5f057598b5.js" crossorigin="anonymous"></script>
+
+    <!--Framework-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Gallery</title>
+
+    <style>
+        /*Navbar*/
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            background-color: #fff;
+            opacity: 0.7;
+            color: #000;
+            padding: 5px 20px;
+            border: 1px solid #fff;
+            transition: 0.6s ease;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: #000;
+            opacity: 1;
+            text-decoration: none;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #000;
+            opacity: 1;
+        }
+
+        /*Filter*/
+        .container {
+            overflow: hidden;
+        }
+
+        .filterDiv {
+            text-align: center;
+            display: none;
+            /* Hidden by default */
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: inline-block;
+
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        /* Add a light grey background on mouse-over */
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        /* Add a dark background to the active button */
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="height:1500px">
+
+    <header>
+        <!--NavBar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <ul
+                        style="margin-top: 34.5px; margin-right: 160px; font-family: Century Gothic; font-size: 15.5px;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="content.html">Collection</a></li>
+                        <li class="active"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="font-family: Century Gothic;">
+
+        <!--Cover-->
+        <div class="w3-container">
+            <p>
+            <div class="row">
+                <img src="benjamin-voros-TnNo84AJJ5A-unsplash.jpg" alt="Cover" class="img-responsive">
+                <p class="carousel-caption" style="padding-bottom: 250px; font-size: 100px;">GALLERY</p>
+            </div>
+            </p>
+        </div>
+
+
+        <!--Gallery of Photos-->
+        <div class="container">
+
+            <!-- First Photo Grid-->
+            <div class="w3-row-padding" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="batu seremban2.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Batu Seremban</b></p>
+                        <p>The modern pattern of ‘batu seremban</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="luobulinka-FO4mQZi1c0M-unsplash.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Fashion</b></p>
+                        <p>Example of fashion style</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <img src="nasi dagang.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Nasi Dagang</b></p>
+                        <p>Delicious local food
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="congkak2.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Congkak</b></p>
+                        <p>The modern design of congkak and it’s made specifically for children</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="food.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Food</b></p>
+                        <p>The variety of Malaysian food</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <img src="tempat.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Malaysia</b></p>
+                        <p>"Malaysia has a lot of historical and interesting place to visit"</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Third Photo Grid-->
+            <div class="w3-row-padding">
+
+                <div class="w3-third w3-container w3-margin-bottom" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
+                    <img src="tasik.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Langkawi</b></p>
+                        <p>This is one of the interesting places in Langkawi known as Tasik Dayang Bunting</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
+                    <img src="bukit tinggi.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Bukit Tinggi</b></p>
+                        <p>Bukit Tinggi has the environment that is rare to be found in Malaysia. This place also known as French Village Malaysia
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <img src="Morroco.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Morocco</b></p>
+                        <p>Moroccan Pavilion is a place in Putrajaya where the visitors can feel like having a vacation in Morocco.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="gallery.html" class="w3-bar-item w3-button w3-hover-black" style="text-decoration: none;">«</a>
+                <a href="gallery.html" class="w3-bar-item w3-black w3-button" style="text-decoration: none;">1</a>
+                
+                
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+        </script>
+
+    </main>
+</body>
+
+</html>
